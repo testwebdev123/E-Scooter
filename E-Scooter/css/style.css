@@ -1,0 +1,651 @@
+/* -------------------------font style part---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* ----------------------------common part------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1 h2 h3 h4 h5 h6 p{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primarycolor: #42454A;
+    --ubuntu: "Ubuntu",sans-serif; 
+}
+/* -------------------------------common part done---------------------- */
+/* -----------------------navbar part working----------------------------- */
+.my_scooter img{
+    width: 70px;
+    height: 47px;
+    margin-top: 27px;
+    margin-right: 49px;
+}
+
+.my_scooter ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+}
+
+.my_scooter ul{
+    gap: 77px;
+}
+
+.my_scooter .login_buttons a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+    padding: 16px 26px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 4px;
+    margin-top: 26px;
+    
+}
+
+.my_scooter .login_buttons a:nth-child(1){
+    margin-right: 25px;
+    color: var(--primarycolor);
+    background-color: #fff;
+}
+
+.my_scooter .login_buttons a:nth-child(2){
+    color: #fff;
+    background-color: var(--primarycolor);
+}
+/* --------------------------navbar part done------------------------------------ */
+/* --------------------------banner part working--------------------------------- */
+.banner_text h1{
+    font-size: 90px;
+    font-weight: 300;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+    text-transform: uppercase;
+    
+}
+
+.banner_text h2{
+    font-size: 90px;
+    font-size: 700;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Custom */
+
+.type {
+  color: #dbd56e;
+  background: var(--primarycolor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: type 1.5s steps(90) 1.5s 1 normal both, cursor 1s step-end infinite;
+  position: relative;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+.banner_text p{
+    width: 353px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+    margin-top: 62px;
+}
+
+.banner_text .line{
+    width: 335px;
+    height: 4px;
+    background-color: var(--primarycolor);
+    margin-top: 93px;
+}
+
+
+
+/* From Uiverse.io by mobinkakei */ 
+.btn {
+  width: 162px;
+  height: 58px;
+  background: var(--primarycolor);
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 62px;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+.banner_links p{
+    width: 87px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--ubuntu);
+    color: var(--primarycolor);
+    margin: 0;
+    text-transform: lowercase;
+    margin-top: 44px;
+}
+
+.banner_links .playbutton {
+	width: 5px;
+	height: 7px;
+	position: absolute;
+	top: 90px;
+	left: 390px;
+}
+.banner_links .round{
+    width: 80px;
+    height: 80px;
+    margin-top: 51px;
+}
+
+.banner_links{
+    display: flex;
+    gap: 51px;
+    position: relative; 
+}
+
+.banner_links .round{
+    width: 80px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.banner_image img {
+	width: 856px;
+	position: absolute;
+	top: -615px;
+	right: -55px;
+}
+
+#banner{
+    padding-top: 84px;
+    position: relative;
+}
+/* ----------------------------banner part done------------------------- */
+/* --------------------------counter part start----------------------------- */
+.counter_iteam h2{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 29px;
+}
+
+.counter_iteam h2 span{
+  font-size: 40px;
+}
+
+.counter_iteam p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 18px;
+}
+
+.counter_iteam{
+  width: 175px;
+  height: 137px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid #F4F4F4;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter_row{
+  display: flex;
+  gap: 59px;
+  margin-top: 221px;
+}
+
+
+/* ----------------------------counter part done--------------------------------- */
+/* -------------------------product information part working------------------------ */
+.product_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.product_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 34px;
+}
+
+.product_text{
+  text-align: center;
+  padding-top: 127px;
+}
+
+.product_image img{
+  width: 748px;
+  height: 707px;
+  margin-top: 22px;
+}
+
+.box_text img{
+  width: 49px;
+  height: 49px;
+  margin-top: 34px;
+}
+
+.box_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 34px;
+  
+}
+
+.box_text{
+  display: flex;
+  gap: 18px;
+}
+
+.product_box{
+  margin-top: 143px;
+}
+/* ---------------------------product information part done---------------------------- */
+/* ----------------------------High Efficiency Motor part working------------------------ */
+.efficiency_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.efficiency_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 34px;
+}
+
+.efficiency_text{
+  text-align: center;
+  padding-top: 127px;
+}
+
+.efficiency_text img{
+  width: 1335px;
+  height: 493px;
+  margin-top: 49px;
+}
+/* ---------------------------------High Efficiency Motor part done------------------------ */
+/* ----------------------------------Multiple Accessories part working---------------------- */
+.accessories_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.accessories_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 34px;
+}
+
+.accessories_text{
+  text-align: center;
+  padding-top: 315px;
+}
+
+.multiple_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 160px;
+}
+
+.multiple_image img{
+  width: 49px;
+  height: 49px;
+  margin-top: 33px;
+}
+
+.multiple_image p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 44px;
+}
+
+.multiple_image{
+  display: flex;
+  gap: 18px;
+}
+
+.accessories_image img{
+  width: 878px;
+  margin-top: 112px;
+}
+
+.shopping_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 131px;
+  
+}
+
+.shopping_box img{
+  width: 49px;
+  height: 49px;
+  margin-top: 33px;
+}
+
+.shopping_box p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  margin-top: 44px;
+}
+
+.shopping_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+.shopping_box{
+  display: flex;
+  gap: 18px;
+  margin-right: 20px;
+}
+
+.box_image img {
+	width: 779px;
+	position: absolute;
+	top: 1190px;
+}
+
+#accessories{
+  position: relative;
+}
+/* --------------------------------------Multiple Accessories part done----------------------------- */
+/* --------------------------------------gallary part working------------------------------------- */
+.gallary_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.gallary_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 34px;
+}
+
+.gallary_text{
+  text-align: center;
+  padding-top:127px ;
+}
+
+.gallary_image img{
+  width: 633px;
+  height: 485px;
+  margin-top: 302px;
+}
+
+.add_buttons a{
+  width: 570px;
+  height: 94px;
+  border: 2px solid var(--primarycolor);
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best_image img{
+  width: 633px;
+  margin-top: 112px;
+}
+/* ------------------------------------gallary part done--------------------------------- */
+/* --------------------------------color part working------------------------------------ */
+.color_text h2{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.color_text p{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 19px;
+}
+
+.color_text{
+  padding-top: 128px;
+  text-align: center;
+}
+
+.slider_photo img{
+  width: 246px;
+}
+
+.slider_image{
+  padding-top: 152px; 
+  position: relative;
+}
+/* -----------------------------------------color part done----------------------------------------- */
+
+/* -------------------------------Subscribe part working------------------------------------------- */
+.subscribe_text h2{
+    font-size: 50px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+}
+
+.subscribe_text p{
+   font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  margin-top: 11px;
+}
+
+.subscribe_mail input{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  padding-left: 28px;
+  width: 400px;
+  height: 81px;
+  background-color: #FAFAFA;
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+  margin-top: 59px;
+}
+
+.subscribe_mail{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+ 
+}
+
+.subscribe_mail button {
+	width: 196px;
+	height: 81px;
+	background-color: var(--primarycolor);
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 60px;
+}
+
+
+#subscribe{
+  padding-top: 121px;
+  text-align: center;
+  position: relative;
+}
+/* --------------------------------- footer part working---------------------------------*/
+
+#footer{
+  margin-top: 127px;
+  background-color: var(--primarycolor);
+}
+
+.footer_text h2{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--ubuntu);
+  color: var(--primarycolor);
+  color: #fff;
+  margin-top: 99px;
+}
+
+.nav_iteam ul li a{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--ubuntu);
+  color: #fff;
+  margin-top: 54px;
+}
+
+.nav_iteam ul{
+  padding-left: 0;
+}
+
+.footer_row{
+  display: flex;
+  gap: 102px;
+  justify-content: end;
+}
+
+.social_media ul {
+  display: flex;
+  gap: 16px;
+}
+
+.social_media ul li a{
+  font-size: 32px;
+}
+
+.footer_image {
+	width: 729px;
+	margin-top: -625px;
+	margin-left: -312px;
+}
+/* -----------------------------------------------footer part done--------------------- */
